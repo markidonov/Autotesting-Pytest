@@ -1,0 +1,169 @@
+test_app_commands.txt
+
+–ö–æ–º–∞–Ω–¥–∞ - start —É—Å–ø–µ—à–Ω–æ –æ—Ç—Ä–∞–±–æ—Ç–∞–ª–∞
+CompletedProcess(args='wine webcalculator.exe start', returncode=0)
+------------------------------------------------------
+–ö–æ–º–∞–Ω–¥–∞ - restart —É—Å–ø–µ—à–Ω–æ –æ—Ç—Ä–∞–±–æ—Ç–∞–ª–∞
+CompletedProcess(args='wine webcalculator.exe restart', returncode=0)
+------------------------------------------------------
+–ö–æ–º–∞–Ω–¥–∞ - show_log —É—Å–ø–µ—à–Ω–æ –æ—Ç—Ä–∞–±–æ—Ç–∞–ª–∞
+CompletedProcess(args='wine webcalculator.exe show_log', returncode=0)
+------------------------------------------------------
+–ö–æ–º–∞–Ω–¥–∞ - --help —É—Å–ø–µ—à–Ω–æ –æ—Ç—Ä–∞–±–æ—Ç–∞–ª–∞
+CompletedProcess(args='wine webcalculator.exe --help', returncode=0)
+------------------------------------------------------
+–ö–æ–º–∞–Ω–¥–∞ - stop —É—Å–ø–µ—à–Ω–æ –æ—Ç—Ä–∞–±–æ—Ç–∞–ª–∞
+CompletedProcess(args='wine webcalculator.exe stop', returncode=0)
+------------------------------------------------------
+
+
+
+
+
+test_api.txt
+
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ localhost:8000
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ localhost:8000
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 6 items
+
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_get_state PASSED  [ 16%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_options PASSED    [ 33%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_addition_post PASSED [ 50%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_multiplication_post PASSED [ 66%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_division_post PASSED [ 83%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_remainder_post PASSED [100%]œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_api/test_api.py::test_get_state
+PASSED tests/test_api/test_api.py::test_options
+PASSED tests/test_api/test_api.py::test_addition_post
+PASSED tests/test_api/test_api.py::test_multiplication_post
+PASSED tests/test_api/test_api.py::test_division_post
+PASSED tests/test_api/test_api.py::test_remainder_post
+============================== 6 passed in 3.15s ===============================
+
+
+
+
+
+test_restart.txt
+
+–ö–æ–º–∞–Ω–¥–∞ restart –æ—Å—É—â–µ—Å—Ç–≤–∏–ª–∞ –ø–µ—Ä–µ–∑–∞–ø—É—Å–∫ –ø—Ä–∏–ª–æ–∂–µ–Ω–∏—è,
+–ü–æ—Å–ª–µ –≤—ã–ø–æ–ª–Ω–µ–Ω–∏—è –∫–æ–º–∞–Ω–¥—ã –ø—Ä–∏–ª–æ–∂–µ–Ω–∏–µ –ø—Ä–æ–¥–æ–ª–∂–∞–µ—Ç —Ä–∞–±–æ—Ç–∞—Ç—å
+–Ω–∞ —Ç–æ–º –∂–µ –∞–¥—Ä–µ—Å–µ –∏ –ø–æ—Ä—Ç—É, —á—Ç–æ –∏ –¥–æ –ø–µ—Ä–µ–∑–∞–ø—É—Å–∫–∞.
+
+
+
+
+
+test_functions.txt
+
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ 127.0.0.1:17678
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ 127.0.0.1:17678
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 5 items
+
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_server_auto PASSED [ 20%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_addition_count PASSED [ 40%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_remainder_count PASSED [ 60%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_division_count PASSED [ 80%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_multiplication_count PASSED [100%]œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_functions/test_functions.py::test_server_auto
+PASSED tests/test_functions/test_functions.py::test_addition_count
+PASSED tests/test_functions/test_functions.py::test_remainder_count
+PASSED tests/test_functions/test_functions.py::test_division_count
+PASSED tests/test_functions/test_functions.py::test_multiplication_count
+============================== 5 passed in 3.16s ===============================
+
+
+
+
+
+test_errors.txt
+
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ 127.0.0.2:17678
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ 127.0.0.2:17678
+œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ 127.0.0.2:17678
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ 127.0.0.2:17678
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 8 items
+
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_port_auto PASSED [ 12%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_remainder_zero FAILED [ 25%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_division_zero FAILED [ 37%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_data_half PASSED [ 50%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_int_wrong PASSED [ 62%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_str_wrong PASSED [ 75%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_big_number PASSED [ 87%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_get_wrong PASSED [100%]œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+
+
+=================================== FAILURES ===================================
+_____________________________ test_remainder_zero ______________________________
+
+code_one = '–û—à–∏–±–∫–∞ –≤—ã—á–∏—Å–ª–µ–Ω–∏—è', a = 25, d = 0
+
+    def test_remainder_zero(code_one, a, d):
+        """–û—à–∏–±–∫–∞ –¥–∞–Ω–Ω—ã—Ö. –ü–æ–ª—É—á–µ–Ω–∏–µ –æ—Å—Ç–∞—Ç–∫–∞ –ø—Ä–∏ –¥–µ–ª–µ–Ω–∏–∏ –Ω–∞ –Ω–æ–ª—å."""
+        try:
+            response = requests.post(f'{URL}/remainder', json={"x":a, "y":d})
+        except ZeroDivisionError as err:
+            print(f"Unexpected {err=}, {type(err)=}")
+            raise
+>       assert response.json()['statusCode'] == 1, '–û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞'
+E       AssertionError: –û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞
+E       assert 8 == 1
+
+/mnt/disk 2/Autotesting/tests/test_errors/test_errors.py:30: AssertionError
+______________________________ test_division_zero ______________________________
+
+code_one = '–û—à–∏–±–∫–∞ –≤—ã—á–∏—Å–ª–µ–Ω–∏—è', a = 25, d = 0
+
+    def test_division_zero(code_one, a, d):
+        """–û—à–∏–±–∫–∞ –¥–∞–Ω–Ω—ã—Ö. –î–µ–ª–µ–Ω–∏–µ –Ω–∞ –Ω–æ–ª—å."""
+        with pytest.raises(ZeroDivisionError) as err:
+            response = requests.post(f'{URL}/division', json={"x":a, "y":d})
+            print(f"Unexpected {err=}, {type(err)=}")
+            raise ZeroDivisionError
+>       assert response.json()['statusCode'] == 1, '–û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞'
+E       AssertionError: –û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞
+E       assert 8 == 1
+
+/mnt/disk 2/Autotesting/tests/test_errors/test_errors.py:41: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Unexpected err=<ExceptionInfo for raises contextmanager>, type(err)=<class '_pytest._code.code.ExceptionInfo'>
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_errors/test_errors.py::test_port_auto
+PASSED tests/test_errors/test_errors.py::test_data_half
+PASSED tests/test_errors/test_errors.py::test_int_wrong
+PASSED tests/test_errors/test_errors.py::test_str_wrong
+PASSED tests/test_errors/test_errors.py::test_big_number
+PASSED tests/test_errors/test_errors.py::test_get_wrong
+FAILED tests/test_errors/test_errors.py::test_remainder_zero - AssertionError...
+FAILED tests/test_errors/test_errors.py::test_division_zero - AssertionError:...
+========================= 2 failed, 6 passed in 3.09s ==========================
