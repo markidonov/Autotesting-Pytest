@@ -1,0 +1,69 @@
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ 127.0.0.2:17678
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ 127.0.0.2:17678
+œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+«‡ÔÛÒÍ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ‡ Ì‡ 127.0.0.2:17678
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ Á‡ÔÛ˘ÂÌ Ì‡ 127.0.0.2:17678
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 8 items
+
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_port_auto PASSED [ 12%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_remainder_zero FAILED [ 25%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_division_zero FAILED [ 37%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_data_half PASSED [ 50%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_int_wrong PASSED [ 62%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_str_wrong PASSED [ 75%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_big_number PASSED [ 87%]
+[2023-08-03 14:14:03] tests/test_errors/test_errors.py::test_get_wrong PASSED [100%]œ˚Ú‡ÂÏÒˇ ÓÒÚ‡ÌÓ‚ËÚ¸ ¬Â·-Í‡Î¸ÍÛÎˇÚÓ
+¬Â·-Í‡Î¸ÍÛÎˇÚÓ ÓÒÚ‡ÌÓ‚ÎÂÌ
+
+
+=================================== FAILURES ===================================
+_____________________________ test_remainder_zero ______________________________
+
+code_one = '–û—à–∏–±–∫–∞ –≤—ã—á–∏—Å–ª–µ–Ω–∏—è', a = 25, d = 0
+
+    def test_remainder_zero(code_one, a, d):
+        """–û—à–∏–±–∫–∞ –¥–∞–Ω–Ω—ã—Ö. –ü–æ–ª—É—á–µ–Ω–∏–µ –æ—Å—Ç–∞—Ç–∫–∞ –ø—Ä–∏ –¥–µ–ª–µ–Ω–∏–∏ –Ω–∞ –Ω–æ–ª—å."""
+        try:
+            response = requests.post(f'{URL}/remainder', json={"x":a, "y":d})
+        except ZeroDivisionError as err:
+            print(f"Unexpected {err=}, {type(err)=}")
+            raise
+>       assert response.json()['statusCode'] == 1, '–û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞'
+E       AssertionError: –û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞
+E       assert 8 == 1
+
+/mnt/disk 2/Autotesting/tests/test_errors/test_errors.py:30: AssertionError
+______________________________ test_division_zero ______________________________
+
+code_one = '–û—à–∏–±–∫–∞ –≤—ã—á–∏—Å–ª–µ–Ω–∏—è', a = 25, d = 0
+
+    def test_division_zero(code_one, a, d):
+        """–û—à–∏–±–∫–∞ –¥–∞–Ω–Ω—ã—Ö. –î–µ–ª–µ–Ω–∏–µ –Ω–∞ –Ω–æ–ª—å."""
+        with pytest.raises(ZeroDivisionError) as err:
+            response = requests.post(f'{URL}/division', json={"x":a, "y":d})
+            print(f"Unexpected {err=}, {type(err)=}")
+            raise ZeroDivisionError
+>       assert response.json()['statusCode'] == 1, '–û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞'
+E       AssertionError: –û—à–∏–±–∫–∞ –∫–æ–¥–∞ —Å—Ç–∞—Ç—É—Å–∞ —Å–µ—Ä–≤–µ—Ä–∞
+E       assert 8 == 1
+
+/mnt/disk 2/Autotesting/tests/test_errors/test_errors.py:41: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Unexpected err=<ExceptionInfo for raises contextmanager>, type(err)=<class '_pytest._code.code.ExceptionInfo'>
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_errors/test_errors.py::test_port_auto
+PASSED tests/test_errors/test_errors.py::test_data_half
+PASSED tests/test_errors/test_errors.py::test_int_wrong
+PASSED tests/test_errors/test_errors.py::test_str_wrong
+PASSED tests/test_errors/test_errors.py::test_big_number
+PASSED tests/test_errors/test_errors.py::test_get_wrong
+FAILED tests/test_errors/test_errors.py::test_remainder_zero - AssertionError...
+FAILED tests/test_errors/test_errors.py::test_division_zero - AssertionError:...
+========================= 2 failed, 6 passed in 3.09s ==========================

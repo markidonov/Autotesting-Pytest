@@ -1,0 +1,99 @@
+@baseUrl = http://127.0.0.1:8000/api
+
+
+#  сложение
+POST {{baseUrl}}/addition/
+Content-Type: application/json
+
+{
+  "x": 32,
+  "y": "f"
+}
+
+###
+
+POST {{baseUrl}}/multiplication/
+Content-Type: application/json
+
+{
+  "x": 32,
+  "y": 2556756756730982092340598329478623045923874593287562830459237
+}
+
+###
+
+POST {{baseUrl}}/division/
+Content-Type: application/json
+
+{
+  "x": 35,
+  "y": 25
+}
+
+###
+
+POST {{baseUrl}}/remainder/
+Content-Type: application/json
+
+{
+  "x": 0,
+  "y": 0
+}
+
+###
+
+# Optinos
+OPTIONS {{baseUrl}}/addition/
+Content-Type: application/json
+
+
+###
+
+# Optinos
+OPTIONS {{baseUrl}}/multiplication/
+Content-Type: application/json
+
+###
+
+# Optinos
+OPTIONS {{baseUrl}}/division/
+Content-Type: application/json
+
+###
+
+# Optinos
+OPTIONS {{baseUrl}}/remainder/
+Content-Type: application/json
+
+###
+
+# Get
+GET {{baseUrl}}/state/
+Content-Type: application/json
+
+
+###
+# Get
+GET {{baseUrl}}/multiplication/
+Content-Type: application/json
+
+
+###
+# Get
+GET {{baseUrl}}/division/
+Content-Type: application/json
+
+
+###
+# Get
+GET {{baseUrl}}/remainder/
+Content-Type: application/json
+
+
+###
+# Get
+GET {{baseUrl}}/state/
+Content-Type: application/json
+
+
+###

@@ -1,0 +1,15 @@
+Команда - start успешно отработала
+CompletedProcess(args='wine webcalculator.exe start', returncode=0)
+------------------------------------------------------
+Команда - restart успешно отработала
+CompletedProcess(args='wine webcalculator.exe restart', returncode=0)
+------------------------------------------------------
+Команда - show_log успешно отработала
+CompletedProcess(args='wine webcalculator.exe show_log', returncode=0)
+------------------------------------------------------
+Команда - --help успешно отработала
+CompletedProcess(args='wine webcalculator.exe --help', returncode=0)
+------------------------------------------------------
+Команда - stop успешно отработала
+CompletedProcess(args='wine webcalculator.exe stop', returncode=0)
+------------------------------------------------------

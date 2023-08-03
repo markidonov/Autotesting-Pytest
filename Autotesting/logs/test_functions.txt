@@ -1,0 +1,25 @@
+Запуск Веб-калькулятора на 127.0.0.1:17678
+Веб-калькулятор запущен на 127.0.0.1:17678
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 5 items
+
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_server_auto PASSED [ 20%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_addition_count PASSED [ 40%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_remainder_count PASSED [ 60%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_division_count PASSED [ 80%]
+[2023-08-03 14:13:50] tests/test_functions/test_functions.py::test_multiplication_count PASSED [100%]Пытаемся остановить Веб-калькулятор
+Веб-калькулятор остановлен
+
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_functions/test_functions.py::test_server_auto
+PASSED tests/test_functions/test_functions.py::test_addition_count
+PASSED tests/test_functions/test_functions.py::test_remainder_count
+PASSED tests/test_functions/test_functions.py::test_division_count
+PASSED tests/test_functions/test_functions.py::test_multiplication_count
+============================== 5 passed in 3.16s ===============================

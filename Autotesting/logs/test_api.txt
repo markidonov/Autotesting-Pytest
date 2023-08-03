@@ -1,0 +1,27 @@
+Запуск Веб-калькулятора на localhost:8000
+Веб-калькулятор запущен на localhost:8000
+============================= test session starts ==============================
+platform linux -- Python 3.10.6, pytest-7.4.0, pluggy-1.2.0 -- /mnt/disk 2/Autotesting/venv/bin/python3
+cachedir: .pytest_cache
+rootdir: /mnt/disk 2/Autotesting
+plugins: testinfra-8.1.0, timestamper-0.0.9
+collecting ... collected 6 items
+
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_get_state PASSED  [ 16%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_options PASSED    [ 33%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_addition_post PASSED [ 50%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_multiplication_post PASSED [ 66%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_division_post PASSED [ 83%]
+[2023-08-03 14:13:40] tests/test_api/test_api.py::test_remainder_post PASSED [100%]Пытаемся остановить Веб-калькулятор
+Веб-калькулятор остановлен
+
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_api/test_api.py::test_get_state
+PASSED tests/test_api/test_api.py::test_options
+PASSED tests/test_api/test_api.py::test_addition_post
+PASSED tests/test_api/test_api.py::test_multiplication_post
+PASSED tests/test_api/test_api.py::test_division_post
+PASSED tests/test_api/test_api.py::test_remainder_post
+============================== 6 passed in 3.15s ===============================
